@@ -1,0 +1,14 @@
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\SwitchDemo1\bin\Debug\net7.0\SwitchDemo1.exe
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\SwitchDemo1\bin\Debug\net7.0\SwitchDemo1.deps.json
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\SwitchDemo1\bin\Debug\net7.0\SwitchDemo1.runtimeconfig.json
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\SwitchDemo1\bin\Debug\net7.0\SwitchDemo1.dll
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\SwitchDemo1\bin\Debug\net7.0\SwitchDemo1.pdb
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\SwitchDemo1\obj\Debug\net7.0\SwitchDemo1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\SwitchDemo1\obj\Debug\net7.0\SwitchDemo1.AssemblyInfoInputs.cache
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\SwitchDemo1\obj\Debug\net7.0\SwitchDemo1.AssemblyInfo.cs
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\SwitchDemo1\obj\Debug\net7.0\SwitchDemo1.csproj.CoreCompileInputs.cache
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\SwitchDemo1\obj\Debug\net7.0\SwitchDemo1.dll
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\SwitchDemo1\obj\Debug\net7.0\refint\SwitchDemo1.dll
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\SwitchDemo1\obj\Debug\net7.0\SwitchDemo1.pdb
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\SwitchDemo1\obj\Debug\net7.0\SwitchDemo1.genruntimeconfig.cache
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\SwitchDemo1\obj\Debug\net7.0\ref\SwitchDemo1.dll

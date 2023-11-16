@@ -1,0 +1,14 @@
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\TernaryOperatorDemo1\bin\Debug\net7.0\TernaryOperatorDemo1.exe
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\TernaryOperatorDemo1\bin\Debug\net7.0\TernaryOperatorDemo1.deps.json
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\TernaryOperatorDemo1\bin\Debug\net7.0\TernaryOperatorDemo1.runtimeconfig.json
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\TernaryOperatorDemo1\bin\Debug\net7.0\TernaryOperatorDemo1.dll
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\TernaryOperatorDemo1\bin\Debug\net7.0\TernaryOperatorDemo1.pdb
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\TernaryOperatorDemo1\obj\Debug\net7.0\TernaryOperatorDemo1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\TernaryOperatorDemo1\obj\Debug\net7.0\TernaryOperatorDemo1.AssemblyInfoInputs.cache
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\TernaryOperatorDemo1\obj\Debug\net7.0\TernaryOperatorDemo1.AssemblyInfo.cs
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\TernaryOperatorDemo1\obj\Debug\net7.0\TernaryOperatorDemo1.csproj.CoreCompileInputs.cache
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\TernaryOperatorDemo1\obj\Debug\net7.0\TernaryOperatorDemo1.dll
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\TernaryOperatorDemo1\obj\Debug\net7.0\refint\TernaryOperatorDemo1.dll
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\TernaryOperatorDemo1\obj\Debug\net7.0\TernaryOperatorDemo1.pdb
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\TernaryOperatorDemo1\obj\Debug\net7.0\TernaryOperatorDemo1.genruntimeconfig.cache
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\TernaryOperatorDemo1\obj\Debug\net7.0\ref\TernaryOperatorDemo1.dll

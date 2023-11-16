@@ -1,0 +1,14 @@
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\Methods\obj\Debug\net7.0\Methods.GeneratedMSBuildEditorConfig.editorconfig
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\Methods\obj\Debug\net7.0\Methods.AssemblyInfoInputs.cache
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\Methods\obj\Debug\net7.0\Methods.AssemblyInfo.cs
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\Methods\obj\Debug\net7.0\Methods.csproj.CoreCompileInputs.cache
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\Methods\bin\Debug\net7.0\Methods.exe
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\Methods\bin\Debug\net7.0\Methods.deps.json
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\Methods\bin\Debug\net7.0\Methods.runtimeconfig.json
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\Methods\bin\Debug\net7.0\Methods.dll
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\Methods\bin\Debug\net7.0\Methods.pdb
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\Methods\obj\Debug\net7.0\Methods.dll
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\Methods\obj\Debug\net7.0\refint\Methods.dll
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\Methods\obj\Debug\net7.0\Methods.pdb
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\Methods\obj\Debug\net7.0\Methods.genruntimeconfig.cache
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\Methods\obj\Debug\net7.0\ref\Methods.dll

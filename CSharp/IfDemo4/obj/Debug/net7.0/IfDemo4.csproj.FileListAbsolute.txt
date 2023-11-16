@@ -1,0 +1,14 @@
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfDemo4\bin\Debug\net7.0\IfDemo4.exe
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfDemo4\bin\Debug\net7.0\IfDemo4.deps.json
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfDemo4\bin\Debug\net7.0\IfDemo4.runtimeconfig.json
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfDemo4\bin\Debug\net7.0\IfDemo4.dll
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfDemo4\bin\Debug\net7.0\IfDemo4.pdb
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfDemo4\obj\Debug\net7.0\IfDemo4.GeneratedMSBuildEditorConfig.editorconfig
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfDemo4\obj\Debug\net7.0\IfDemo4.AssemblyInfoInputs.cache
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfDemo4\obj\Debug\net7.0\IfDemo4.AssemblyInfo.cs
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfDemo4\obj\Debug\net7.0\IfDemo4.csproj.CoreCompileInputs.cache
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfDemo4\obj\Debug\net7.0\IfDemo4.dll
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfDemo4\obj\Debug\net7.0\refint\IfDemo4.dll
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfDemo4\obj\Debug\net7.0\IfDemo4.pdb
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfDemo4\obj\Debug\net7.0\IfDemo4.genruntimeconfig.cache
+E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfDemo4\obj\Debug\net7.0\ref\IfDemo4.dll
