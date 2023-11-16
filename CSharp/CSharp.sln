@@ -27,9 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwitchDemo1", "SwitchDemo1\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwitchDemo2", "SwitchDemo2\SwitchDemo2.csproj", "{DFF07AD9-CBB9-4F11-850A-CA9C95AD6DE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TernaryOperator", "TernaryOperator\TernaryOperator.csproj", "{63AA147B-5C33-4957-AE5C-7EEE7B706FB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TernaryOperator", "TernaryOperator\TernaryOperator.csproj", "{63AA147B-5C33-4957-AE5C-7EEE7B706FB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TernaryOperatorDemo1", "TernaryOperatorDemo1\TernaryOperatorDemo1.csproj", "{988A6F46-4F96-4115-B1E7-08B056940832}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TernaryOperatorDemo1", "TernaryOperatorDemo1\TernaryOperatorDemo1.csproj", "{988A6F46-4F96-4115-B1E7-08B056940832}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorAppDemo", "CalculatorAppDemo\CalculatorAppDemo.csproj", "{3966F02B-DC30-46FD-9090-C1623425B907}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{988A6F46-4F96-4115-B1E7-08B056940832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{988A6F46-4F96-4115-B1E7-08B056940832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{988A6F46-4F96-4115-B1E7-08B056940832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3966F02B-DC30-46FD-9090-C1623425B907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3966F02B-DC30-46FD-9090-C1623425B907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3966F02B-DC30-46FD-9090-C1623425B907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3966F02B-DC30-46FD-9090-C1623425B907}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
