@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JTmFgNA0RkHO+z+xjNbb6whddeZJBCV+AzIo95TQmG613gNKG3aVZmI0IzlRQ3VWyyfLBST5tThIc4OG95+f7g==",
+  "dgSpecHash": "PVWRrvHYBgSgPU2dyUanKcK5xgoOphsKSLTdSwtHsloEHdDKaQV72tyl31WKHy38NQZc3WCQVtLMZhN5ypO8Pg==",
   "success": true,
-  "projectFilePath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\Switch\\Switch.csproj",
+  "projectFilePath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\Switch\\Switch.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

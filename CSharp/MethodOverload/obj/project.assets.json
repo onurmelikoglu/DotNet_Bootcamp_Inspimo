@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\MethodOverload\\MethodOverload.csproj",
+      "projectUniqueName": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\MethodOverload\\MethodOverload.csproj",
       "projectName": "MethodOverload",
-      "projectPath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\MethodOverload\\MethodOverload.csproj",
+      "projectPath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\MethodOverload\\MethodOverload.csproj",
       "packagesPath": "C:\\Users\\onurm\\.nuget\\packages\\",
-      "outputPath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\MethodOverload\\obj\\",
+      "outputPath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\MethodOverload\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\IfConditional\\IfConditional.csproj",
+      "projectUniqueName": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\IfConditional\\IfConditional.csproj",
       "projectName": "IfConditional",
-      "projectPath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\IfConditional\\IfConditional.csproj",
+      "projectPath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\IfConditional\\IfConditional.csproj",
       "packagesPath": "C:\\Users\\onurm\\.nuget\\packages\\",
-      "outputPath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\IfConditional\\obj\\",
+      "outputPath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\IfConditional\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

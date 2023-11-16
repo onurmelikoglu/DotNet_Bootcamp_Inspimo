@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+AShfOuMqSiaL0N0x9z3S+B5lyYFlggkwKsJ4wdvV+nu2BMM7RUhbrf+li3jsPGJ+eEvGjpVTO6ZAR4RmNwygA==",
+  "dgSpecHash": "SeOqOGOJSq7R29SY6/4DVTYpEoJv5RubBRTZ8DjFgp5W5XyvHxb9FRFce+DMLdLRHABnI/tXoap/KVu0uakgWQ==",
   "success": true,
-  "projectFilePath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\IfConditional\\IfConditional.csproj",
+  "projectFilePath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\IfConditional\\IfConditional.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

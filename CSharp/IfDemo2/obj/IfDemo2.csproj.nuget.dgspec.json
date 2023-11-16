@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\IfDemo2\\IfDemo2.csproj": {}
+    "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\IfDemo2\\IfDemo2.csproj": {}
   },
   "projects": {
-    "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\IfDemo2\\IfDemo2.csproj": {
+    "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\IfDemo2\\IfDemo2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\IfDemo2\\IfDemo2.csproj",
+        "projectUniqueName": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\IfDemo2\\IfDemo2.csproj",
         "projectName": "IfDemo2",
-        "projectPath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\IfDemo2\\IfDemo2.csproj",
+        "projectPath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\IfDemo2\\IfDemo2.csproj",
         "packagesPath": "C:\\Users\\onurm\\.nuget\\packages\\",
-        "outputPath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\IfDemo2\\obj\\",
+        "outputPath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\IfDemo2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

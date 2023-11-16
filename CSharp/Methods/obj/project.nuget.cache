@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pjqfWmzNJmSMR/kduxQulQZoo+N1N5oqT01zMFVKD5UVL7SQvzgGNV48kxBD6Gqc/HGe0RK1+Vc92L+rfjxR6Q==",
+  "dgSpecHash": "B7J5jgg2UHmH7/ewOzMW7Pxmg5MbwCf696KWA56F6E5BJ+LVXKRB5mTRzFQv1MKAzSpWz9jvgwqfYAhnpQmitw==",
   "success": true,
-  "projectFilePath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\Methods\\Methods.csproj",
+  "projectFilePath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\Methods\\Methods.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

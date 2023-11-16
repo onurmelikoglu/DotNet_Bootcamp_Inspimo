@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\TernaryOperatorDemo1\\TernaryOperatorDemo1.csproj": {}
+    "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\TernaryOperatorDemo1\\TernaryOperatorDemo1.csproj": {}
   },
   "projects": {
-    "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\TernaryOperatorDemo1\\TernaryOperatorDemo1.csproj": {
+    "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\TernaryOperatorDemo1\\TernaryOperatorDemo1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\TernaryOperatorDemo1\\TernaryOperatorDemo1.csproj",
+        "projectUniqueName": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\TernaryOperatorDemo1\\TernaryOperatorDemo1.csproj",
         "projectName": "TernaryOperatorDemo1",
-        "projectPath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\TernaryOperatorDemo1\\TernaryOperatorDemo1.csproj",
+        "projectPath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\TernaryOperatorDemo1\\TernaryOperatorDemo1.csproj",
         "packagesPath": "C:\\Users\\onurm\\.nuget\\packages\\",
-        "outputPath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\TernaryOperatorDemo1\\obj\\",
+        "outputPath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\TernaryOperatorDemo1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

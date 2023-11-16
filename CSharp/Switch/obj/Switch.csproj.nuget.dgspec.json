@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\Switch\\Switch.csproj": {}
+    "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\Switch\\Switch.csproj": {}
   },
   "projects": {
-    "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\Switch\\Switch.csproj": {
+    "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\Switch\\Switch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\Switch\\Switch.csproj",
+        "projectUniqueName": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\Switch\\Switch.csproj",
         "projectName": "Switch",
-        "projectPath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\Switch\\Switch.csproj",
+        "projectPath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\Switch\\Switch.csproj",
         "packagesPath": "C:\\Users\\onurm\\.nuget\\packages\\",
-        "outputPath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\Switch\\obj\\",
+        "outputPath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\Switch\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

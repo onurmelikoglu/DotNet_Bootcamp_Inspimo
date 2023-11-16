@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\TernaryOperator\\TernaryOperator.csproj",
+      "projectUniqueName": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\TernaryOperator\\TernaryOperator.csproj",
       "projectName": "TernaryOperator",
-      "projectPath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\TernaryOperator\\TernaryOperator.csproj",
+      "projectPath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\TernaryOperator\\TernaryOperator.csproj",
       "packagesPath": "C:\\Users\\onurm\\.nuget\\packages\\",
-      "outputPath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\TernaryOperator\\obj\\",
+      "outputPath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\TernaryOperator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

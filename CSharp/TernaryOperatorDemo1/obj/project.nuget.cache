@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3aEKFoJbPpyGGmt0ikwYfssfHIgztEI9CONk7PjgHf0fs+38SleAPDZ+U8aKu3jM2zQ6XcUzyPgqptw6FiB7Ew==",
+  "dgSpecHash": "Tt56z4DY/KIF1zIBUWceee+8KdyWnItBfId/uwhwMwnJbk9p2jJzbfvu6fQRZu0rurXCPryrYAX8RlSw/cxp9w==",
   "success": true,
-  "projectFilePath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\TernaryOperatorDemo1\\TernaryOperatorDemo1.csproj",
+  "projectFilePath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\TernaryOperatorDemo1\\TernaryOperatorDemo1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

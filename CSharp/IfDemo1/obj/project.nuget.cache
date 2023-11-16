@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/3ydk9jVXR1RvcZQM83DMfsBYFwloJvnfl3WLJL4ZlrztaaH13sOIsjly7AglZtDSms8uB9kpRRIXQbpSsXPIQ==",
+  "dgSpecHash": "LzC4sju5JBhoUfqdAoqwEi7Lmbgs1uCLZOA/Fxwxp1CHMphff3Xp1eE4NO+6Ko7xp7/UwGyKf/59jgnhRjwb5g==",
   "success": true,
-  "projectFilePath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\IfDemo1\\IfDemo1.csproj",
+  "projectFilePath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\IfDemo1\\IfDemo1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\Methods\\Methods.csproj",
+      "projectUniqueName": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\Methods\\Methods.csproj",
       "projectName": "Methods",
-      "projectPath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\Methods\\Methods.csproj",
+      "projectPath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\Methods\\Methods.csproj",
       "packagesPath": "C:\\Users\\onurm\\.nuget\\packages\\",
-      "outputPath": "E:\\Development\\Courses\\.Net\\InspimoBootcamp\\CSharp\\Methods\\obj\\",
+      "outputPath": "E:\\Development\\GitRepo\\DotNet_Bootcamp_Inspimo\\CSharp\\Methods\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

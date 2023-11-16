@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IfConditionalDemo1
-build_property.ProjectDir = E:\Development\Courses\.Net\InspimoBootcamp\CSharp\IfConditionalDemo1\
+build_property.ProjectDir = E:\Development\GitRepo\DotNet_Bootcamp_Inspimo\CSharp\IfConditionalDemo1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
