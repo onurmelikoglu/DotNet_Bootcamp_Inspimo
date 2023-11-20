@@ -37,16 +37,6 @@
                 Console.WriteLine();
             }
 
-            /*
-            1. başla
-            2. kullanıcı adı alınır
-            3. şifre alınır
-            4. iki boyutlu diziyi tarayarak girilen kullanıcı adı ve şifreli satır var mı bakılır
-            5. eğer varsa hoşgeldin kullanıcı yazdırılır
-            6. yoksa kullanıcı adı veya şifre hatalı yazdırılır
-            7. bitir
-            */
-
         }
     }
 }

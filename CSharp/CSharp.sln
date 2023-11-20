@@ -57,17 +57,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PalindromeDemo", "Palindrom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckerboardPatternDemo", "DamaTahtasiPrinterDemo\CheckerboardPatternDemo.csproj", "{ACF057CD-D058-453C-BFFD-7E650C684910}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoWhileLoop", "DoWhileLoop\DoWhileLoop.csproj", "{6EBCCF8B-B035-4E14-AD68-51F8FD9A855D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoWhileLoop", "DoWhileLoop\DoWhileLoop.csproj", "{6EBCCF8B-B035-4E14-AD68-51F8FD9A855D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{FAF4BCEF-3119-48B5-907D-ACD70A234E79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csproj", "{FAF4BCEF-3119-48B5-907D-ACD70A234E79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysDemo1", "ArraysDemo1\ArraysDemo1.csproj", "{A7C3640F-4B1C-47E0-84F0-54059DFA0E6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArraysDemo1", "ArraysDemo1\ArraysDemo1.csproj", "{A7C3640F-4B1C-47E0-84F0-54059DFA0E6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiDimensionalArrays", "MultiDimensionalArrays\MultiDimensionalArrays.csproj", "{B5CE9762-8A65-4D54-A9B8-BF6AB308542D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiDimensionalArrays", "MultiDimensionalArrays\MultiDimensionalArrays.csproj", "{B5CE9762-8A65-4D54-A9B8-BF6AB308542D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForEachLoop", "ForEachLoop\ForEachLoop.csproj", "{37E06695-C467-4432-813E-F21405C06BA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForEachLoop", "ForEachLoop\ForEachLoop.csproj", "{37E06695-C467-4432-813E-F21405C06BA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForEachDemo", "ForEachDemo\ForEachDemo.csproj", "{E6DC1F6B-91C1-4AEB-AC46-1833C197F1CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForEachDemo", "ForEachDemo\ForEachDemo.csproj", "{E6DC1F6B-91C1-4AEB-AC46-1833C197F1CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserValidationDemo", "UserValidationDemo\UserValidationDemo.csproj", "{E21160E9-F0FB-4188-BE7E-43541797B2EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -207,6 +209,10 @@ Global
 		{E6DC1F6B-91C1-4AEB-AC46-1833C197F1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6DC1F6B-91C1-4AEB-AC46-1833C197F1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6DC1F6B-91C1-4AEB-AC46-1833C197F1CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E21160E9-F0FB-4188-BE7E-43541797B2EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E21160E9-F0FB-4188-BE7E-43541797B2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E21160E9-F0FB-4188-BE7E-43541797B2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E21160E9-F0FB-4188-BE7E-43541797B2EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
