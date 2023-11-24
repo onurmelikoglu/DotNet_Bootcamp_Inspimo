@@ -5,20 +5,21 @@
         static void Main(string[] args)
         {
             Console.Write("Cümle(Ç: çıkış)");
-            string cumle = Console.ReadLine();
+            string word = Console.ReadLine();
             int index = 0;
             int wordCount = 0;
-            while( cumle.ToLower() != "ç")
+            while(word.ToLower() != "ç")
             {
-                for(int i = 0; i < cumle.Length; i++)
+                for(int i = 0; i < word.Length; i++)
                 {
-                    int space = cumle.IndexOf(' ', i);
-                    if (space == -1) { Console.WriteLine(cumle.Substring(i)); break; }
-                    else { Console.WriteLine(cumle.Substring(i, space - i)); i = space + 1; wordCount++; }
+                    int space = word.IndexOf(' ', index);
+                    if (space == -1) { Console.WriteLine(word.Substring(index)); break; }
+                    else { Console.WriteLine(word.Substring(index, space - index)); index = space + 1; wordCount++; }
                 }
                 Console.WriteLine("Kelime Sayısı: " + ( wordCount + 1 ));
                 Console.Write("Cümle (Ç: çıkış)");
-                cumle = Console.ReadLine();
+                word = Console.ReadLine();
+                index = 0;
                 wordCount = 0;
             }
         }
