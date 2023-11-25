@@ -1,4 +1,6 @@
-﻿namespace Strings
+﻿using System.Globalization;
+
+namespace Strings
 {
     internal class Program
     {
@@ -205,19 +207,19 @@
             //    cumle = Console.ReadLine();
             //}
 
-            Console.Write("Cümle (Ç: çıkış)");
-            string yenicumle = Console.ReadLine();
-            string[] yenikelimeler;
-            while (yenicumle.ToLower() != "ç")
-            {
-                yenikelimeler = yenicumle.Split(' ');
-                foreach(string k in yenikelimeler)
-                {
-                    Console.WriteLine(k);
-                }
-                Console.Write("Cümle (Ç: çıkış)");
-                yenicumle = Console.ReadLine();
-            }
+            //Console.Write("Cümle (Ç: çıkış)");
+            //string yenicumle = Console.ReadLine();
+            //string[] yenikelimeler;
+            //while (yenicumle.ToLower() != "ç")
+            //{
+            //    yenikelimeler = yenicumle.Split(' ');
+            //    foreach(string k in yenikelimeler)
+            //    {
+            //        Console.WriteLine(k);
+            //    }
+            //    Console.Write("Cümle (Ç: çıkış)");
+            //    yenicumle = Console.ReadLine();
+            //}
 
             string ad = "Çağıl";
             string soyad = "Alsaç";
@@ -240,8 +242,74 @@
             Console.WriteLine(c); // '
 
 
+            string tamAd = " Çağıl Alsaç ";
+            Console.WriteLine("\"" + tamAd + "\"");
+            Console.WriteLine("\"" + tamAd.Trim() + "\""); // TÜm boşlukları temizler
+            Console.WriteLine("\"" + tamAd.TrimStart() + "\""); // Baştaki boşlukları temizler
+            Console.WriteLine("\"" + tamAd.TrimEnd() + "\""); // Sondaki boşlukları temizler
 
+            string diller = "C#, Java, Python, ";
+            string trimlenmisDiller = diller.Trim(',',' ');
+            Console.WriteLine(trimlenmisDiller);
+
+            int ogrenciNo = 123456;
+            string ogrenciNoYazi = ogrenciNo.ToString();
+            Console.WriteLine(ogrenciNo);
+
+            bool dogruMu = true;
+            Console.WriteLine(dogruMu.ToString()); // True
+
+            int[] sayilar = { 1, 2, 3 };
+            Console.WriteLine(sayilar.ToString()); // System.Int32[]
+
+            int gun = 5;
+            int ay = 11;
+            int yil = 2023;
+            Console.WriteLine("Tarih: " + gun + "." + ay + "." + yil); // 5.11.2023
+            Console.WriteLine($"Formatlanmış Tarih: {TarihGetir(gun, ay, yil)}");
+
+            Console.WriteLine($"Formatlanmış Tarih: {gun.ToString().PadLeft(2,'0')}." +
+                $"{ay.ToString().PadLeft(2,'0')}." +
+                $"{yil}");
+
+            string message = "To be continued";
+            Console.WriteLine(message.PadRight(18,'.'));
+
+            double sayi1 = 12.34;
+            string forSayi1;
+            forSayi1 = sayi1.ToString(); // "12,34"
+            forSayi1 = sayi1.ToString("N0", new CultureInfo("tr-TR"));
+            Console.WriteLine(forSayi1);
+
+            forSayi1 = sayi1.ToString("C1", new CultureInfo("en-US")); // $12.3
+
+            Console.WriteLine(forSayi1);
+
+            double sayi2 = 123.456;
+            string forSayi2 = string.Format(new CultureInfo("tr-TR"), "{0,7:N1}", sayi2);
+            Console.WriteLine(forSayi2);
+
+            forSayi2 = string.Format(new CultureInfo("en-US"), "{0:C2}", sayi2);
+            Console.WriteLine(forSayi2);
+
+            // TC kimlik doğrulama algoritmasını yap
 
         }
+
+        static string TarihGetir(int gun, int ay, int yil)
+        {
+            string tarih;
+            string gunString = gun.ToString();
+            string ayString = ay.ToString();
+
+            if (gunString.Length == 1)
+                gunString = "0" + gunString;
+            if (ayString.Length == 1)
+                ayString = "0" + ayString;
+            tarih = gunString + "." + ayString + "." + yil;
+            return tarih;
+        }
+
     }
+   
 }
