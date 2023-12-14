@@ -3,13 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructors", "Constructors\Constructors.csproj", "{2ACD51EA-5ECB-4FC8-8C78-6C34257C56CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Constructors", "Constructors\Constructors.csproj", "{2ACD51EA-5ECB-4FC8-8C78-6C34257C56CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgrenciDemo", "OgrenciDemo\OgrenciDemo.csproj", "{8A43F381-F323-4E3A-813B-B89EEA9FEEE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OgrenciDemo", "OgrenciDemo\OgrenciDemo.csproj", "{8A43F381-F323-4E3A-813B-B89EEA9FEEE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeOperationsDemo", "TimeOperationsDemo\TimeOperationsDemo.csproj", "{E6CA7E3F-381C-4418-9D26-5304AB5C95B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeOperationsDemo", "TimeOperationsDemo\TimeOperationsDemo.csproj", "{E6CA7E3F-381C-4418-9D26-5304AB5C95B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalizersAndDisposable", "FinalizersAndDisposable\FinalizersAndDisposable.csproj", "{DDDAB841-719C-4547-95E5-43A162BC8F84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinalizersAndDisposable", "FinalizersAndDisposable\FinalizersAndDisposable.csproj", "{DDDAB841-719C-4547-95E5-43A162BC8F84}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticClassesAndMethods", "StaticClassesAndMethods\StaticClassesAndMethods.csproj", "{353735E3-E476-40DB-9989-9A664647B89A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticDemo", "StaticDemo\StaticDemo.csproj", "{8B9920E7-3445-4C3C-8F6C-46223BB44B13}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{2BBD05E2-9A40-45AA-AD08-E850179B9A8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesDemo", "InterfacesDemo\InterfacesDemo.csproj", "{EDC3DF47-9CB7-471B-A66F-6E9DF7D93E5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceSegregation", "InterfaceSegregation\InterfaceSegregation.csproj", "{E6782D24-363A-4AB1-BB9A-F590591B514C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesDemo1", "InterfacesDemo1\InterfacesDemo1.csproj", "{B71C2DD7-92A2-4C53-8E12-E6E4A87D53DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +45,30 @@ Global
 		{DDDAB841-719C-4547-95E5-43A162BC8F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDDAB841-719C-4547-95E5-43A162BC8F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDDAB841-719C-4547-95E5-43A162BC8F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{353735E3-E476-40DB-9989-9A664647B89A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{353735E3-E476-40DB-9989-9A664647B89A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{353735E3-E476-40DB-9989-9A664647B89A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{353735E3-E476-40DB-9989-9A664647B89A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B9920E7-3445-4C3C-8F6C-46223BB44B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B9920E7-3445-4C3C-8F6C-46223BB44B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B9920E7-3445-4C3C-8F6C-46223BB44B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B9920E7-3445-4C3C-8F6C-46223BB44B13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BBD05E2-9A40-45AA-AD08-E850179B9A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BBD05E2-9A40-45AA-AD08-E850179B9A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BBD05E2-9A40-45AA-AD08-E850179B9A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BBD05E2-9A40-45AA-AD08-E850179B9A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDC3DF47-9CB7-471B-A66F-6E9DF7D93E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDC3DF47-9CB7-471B-A66F-6E9DF7D93E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDC3DF47-9CB7-471B-A66F-6E9DF7D93E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDC3DF47-9CB7-471B-A66F-6E9DF7D93E5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6782D24-363A-4AB1-BB9A-F590591B514C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6782D24-363A-4AB1-BB9A-F590591B514C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6782D24-363A-4AB1-BB9A-F590591B514C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6782D24-363A-4AB1-BB9A-F590591B514C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B71C2DD7-92A2-4C53-8E12-E6E4A87D53DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71C2DD7-92A2-4C53-8E12-E6E4A87D53DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71C2DD7-92A2-4C53-8E12-E6E4A87D53DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71C2DD7-92A2-4C53-8E12-E6E4A87D53DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
