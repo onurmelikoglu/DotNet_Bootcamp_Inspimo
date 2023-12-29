@@ -2,6 +2,16 @@
 {
     internal class Program
     {
+
+        const int MaxAttempts = 6;
+
+        enum GameState
+        {
+            Continue,
+            Win,
+            Lose,
+            Exit
+        }
         static void Main()
         {
             Console.WriteLine("Hangman Oyununa Hoşgeldiniz!");
@@ -9,11 +19,13 @@
             string secretWord = ChooseRandomWord(), gameController = string.Empty;
             char[] guessedWord = new char[secretWord.Length];
             bool[] letterGuessed = new bool[26]; // Daha önce kullanılan kelimeler
-            int attemptsLeft = 6; // Kalan  deneme sayısı
+            int attemptsLeft = MaxAttempts; // Kalan  deneme sayısı
 
             InitializeGuessedWord(guessedWord);
 
-            while (gameController != "ç")
+            GameState gameState;
+
+            do
             {
                 DisplayHangman(attemptsLeft);
                 DisplayWord(guessedWord);
@@ -31,32 +43,52 @@
                     attemptsLeft--;
                 }
 
-                if (Array.IndexOf(guessedWord, '_') == -1)
+                gameState = CheckGameState(guessedWord, attemptsLeft);
+
+                if (gameState == GameState.Win || gameState == GameState.Lose)
                 {
-                    Console.WriteLine("Tebrikler! Doğru kelime: " + secretWord);
+                    
+                    if(gameState == GameState.Win)
+                    {
+                        Console.WriteLine($"Tebrikler Bildiniz!! Doğru kelime: {secretWord}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Üzgünüm Kaybettiniz!! Doğru kelime: {secretWord}");
+                    }
+                    Console.WriteLine("Çıkmak için 'ç', tekrar oynamak için herhangi bir tuşa tıklayınız!!!");
+                    if (Console.ReadLine() == "ç")
+                    {
+                        gameState = GameState.Exit;
+                    }
+                    else
+                    {
+                        secretWord = ChooseRandomWord();
+                        guessedWord = new char[secretWord.Length];
+                        InitializeGuessedWord(guessedWord);
+                        letterGuessed = new bool[26];
+                        attemptsLeft = MaxAttempts;
+                    }
                 }
 
-                if (attemptsLeft == 0)
-                {
-                    Console.WriteLine("Üzgünüm, hakkınız doldu. Doğru kelime: " + secretWord);
-                   
-                }
+            } while (gameState != GameState.Exit);
 
-                if (attemptsLeft == 0 || Array.IndexOf(guessedWord, '_') == -1)
-                {
-                    Console.WriteLine("Çıkmak için ç, tekrar oynamak için herhangi bir tuşa tıklayınız!!!");
-                    gameController = Console.ReadLine();
-                    secretWord = ChooseRandomWord();
-                    guessedWord = new char[secretWord.Length];
-                    InitializeGuessedWord(guessedWord);
-                    letterGuessed = new bool[26];
-                    attemptsLeft = 6;
-                }
+
+        }
+
+        static GameState CheckGameState(char[] guessedWord, int attemptsLeft)
+        {
+            if (Array.IndexOf(guessedWord, '_') == -1)
+            {
+                return GameState.Win;
             }
 
-            
+            if (attemptsLeft == 0)
+            {
+                return GameState.Lose;
+            }
 
-            
+            return GameState.Continue;
         }
 
         static string ChooseRandomWord()
@@ -128,7 +160,7 @@
     ___|___"
             };
 
-            Console.WriteLine(hangmanImages[6 - attemptsLeft]);
+            Console.WriteLine(hangmanImages[MaxAttempts - attemptsLeft]);
         }
 
         static void DisplayWord(char[] guessedWord)
