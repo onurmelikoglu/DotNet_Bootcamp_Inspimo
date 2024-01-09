@@ -57,7 +57,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionsDemo2", "Collect
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionsDemo3", "CollectionDemo3\CollectionsDemo3.csproj", "{83AF222A-64C9-41F1-82D2-4679A611D67D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HangmanDemo", "HangmanDemo\HangmanDemo.csproj", "{14ECF572-7B4B-4723-B7E2-17EB09304E34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HangmanDemo", "HangmanDemo\HangmanDemo.csproj", "{14ECF572-7B4B-4723-B7E2-17EB09304E34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KopeklerimApp", "KopeklerimApp\KopeklerimApp.csproj", "{90049DE6-6F0B-42E8-8F04-84061C4C3C9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +179,10 @@ Global
 		{14ECF572-7B4B-4723-B7E2-17EB09304E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14ECF572-7B4B-4723-B7E2-17EB09304E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14ECF572-7B4B-4723-B7E2-17EB09304E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90049DE6-6F0B-42E8-8F04-84061C4C3C9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90049DE6-6F0B-42E8-8F04-84061C4C3C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90049DE6-6F0B-42E8-8F04-84061C4C3C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90049DE6-6F0B-42E8-8F04-84061C4C3C9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
