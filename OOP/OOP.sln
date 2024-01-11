@@ -61,6 +61,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HangmanDemo", "HangmanDemo\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KopeklerimApp", "KopeklerimApp\KopeklerimApp.csproj", "{90049DE6-6F0B-42E8-8F04-84061C4C3C9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgrenciYonetimApp", "OgrenciYonetimApp\OgrenciYonetimApp.csproj", "{59721B09-BF2B-4CF9-AB62-906420A6F784}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +185,10 @@ Global
 		{90049DE6-6F0B-42E8-8F04-84061C4C3C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90049DE6-6F0B-42E8-8F04-84061C4C3C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90049DE6-6F0B-42E8-8F04-84061C4C3C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59721B09-BF2B-4CF9-AB62-906420A6F784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59721B09-BF2B-4CF9-AB62-906420A6F784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59721B09-BF2B-4CF9-AB62-906420A6F784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59721B09-BF2B-4CF9-AB62-906420A6F784}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
