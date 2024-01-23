@@ -1,4 +1,16 @@
+using DataAccess.Contexts;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+#region Connection String
+var connectionString = builder.Configuration.GetConnectionString("Db");
+#endregion
+
+#region IoC Container
+// Autofac, Ninject
+builder.Services.AddDbContext<Db>(options => options.UseSqlServer(connectionString));
+#endregion
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
