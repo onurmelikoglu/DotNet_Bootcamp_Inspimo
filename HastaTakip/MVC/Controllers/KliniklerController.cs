@@ -1,6 +1,7 @@
 ﻿#nullable disable
 using Business.Models;
 using Business.Services;
+using DataAccess.Results.Bases;
 using Microsoft.AspNetCore.Mvc;
 
 //Generated from Custom Template.
@@ -19,8 +20,21 @@ namespace MVC.Controllers
         // GET: Klinikler
         public IActionResult Index()
         {
-            List<KlinikModel> klinikList = klinikService.Query().ToList(); // TODO: Add get collection service logic here
+            // 1.yöntem
+            // List<KlinikModel> klinikList = klinikService.Query().ToList();
+            // 2. yöntem
+            List<KlinikModel> klinikList = klinikService.GetList();
+
             return View(klinikList);
+        }
+
+        // GET: Klinikler/GetJson
+
+        public JsonResult GetItemJson(int id)
+        {
+            // var klinikler = klinikService.Query().ToList();
+            var klinikler = klinikService.Query().SingleOrDefault(k => k.Id == id);
+            return Json(klinikler);
         }
 
         // GET: Klinikler/Details/5
@@ -44,8 +58,14 @@ namespace MVC.Controllers
             // önce kayıtlar where ile filtrelenir, dönen koleksiyon sonucu üzerinden tek bir kayıt dönülür
             // KlinikModel klinik = klinikService.Query().Where(k => k.Id == id).SingleOrDefault();
 
+            // 1. yöntem: 
             // koşula göre bulduğu tek kaydı döner, eğer kaydı bulamazsa null döner, birden çok kayıt varsa exception fırlatır
-            KlinikModel klinik = klinikService.Query().SingleOrDefault(k => k.Id == id); // TODO: Add get item service logic here
+            // KlinikModel klinik = klinikService.Query().SingleOrDefault(k => k.Id == id); // TODO: Add get item service logic here
+
+            // 2. yöntem:
+            KlinikModel klinik = klinikService.GetItem(id);
+
+            
             if (klinik == null)
             {
                 return NotFound(); // 404 (Not Found) HTTP Status Code
@@ -54,6 +74,7 @@ namespace MVC.Controllers
         }
 
         // GET: Klinikler/Create
+        // [HttpGet] // default: GET
         public IActionResult Create()
         {
             // TODO: Add get related items service logic here to set ViewData if necessary
@@ -70,8 +91,27 @@ namespace MVC.Controllers
             if (ModelState.IsValid)
             {
                 // TODO: Add insert service logic here
-                return RedirectToAction(nameof(Index));
-            }
+                Result result = klinikService.Add(klinik);
+                if (result.IsSuccessful)
+                {
+                    TempData["Mesaj"] = result.Message;
+                    // 1. yöntem
+                    // return RedirectToAction("Index");
+                    // 2. yöntem 
+                    // return RedirectToAction(nameof(Index));
+                    // 3. yöntem
+                    return RedirectToAction(nameof(Details), new { id = klinik.Id });
+                }
+
+                // 1. yöntem
+                // ViewData["Mesaj"] = result.Message;
+                // 2. yöntem
+                // ViewBag.Mesaj = result.Message;
+                // 3. yöntem 
+                ModelState.AddModelError("", result.Message); // Validation summary
+
+
+			}
             // TODO: Add get related items service logic here to set ViewData if necessary
             return View(klinik);
         }
@@ -79,7 +119,7 @@ namespace MVC.Controllers
         // GET: Klinikler/Edit/5
         public IActionResult Edit(int id)
         {
-            KlinikModel klinik = null; // TODO: Add get item service logic here
+            KlinikModel klinik = klinikService.Query().SingleOrDefault(k => k.Id == id); // TODO: Add get item service logic here
             if (klinik == null)
             {
                 return NotFound();
@@ -98,7 +138,15 @@ namespace MVC.Controllers
             if (ModelState.IsValid)
             {
                 // TODO: Add update service logic here
-                return RedirectToAction(nameof(Index));
+                Result result = klinikService.Update(klinik);
+                if (result.IsSuccessful)
+                {
+                    TempData["Mesaj"] = result.Message;
+                    return RedirectToAction(nameof(Details), new { id = klinik.Id });
+                }
+                ModelState.AddModelError("",result.Message); // view -> validation summary
+
+
             }
             // TODO: Add get related items service logic here to set ViewData if necessary
             return View(klinik);
@@ -107,7 +155,7 @@ namespace MVC.Controllers
         // GET: Klinikler/Delete/5
         public IActionResult Delete(int id)
         {
-            KlinikModel klinik = null; // TODO: Add get item service logic here
+            KlinikModel klinik = klinikService.GetItem(id); // TODO: Add get item service logic here
             if (klinik == null)
             {
                 return NotFound();
@@ -121,6 +169,8 @@ namespace MVC.Controllers
         public IActionResult DeleteConfirmed(int id)
         {
             // TODO: Add delete service logic here
+            Result result = klinikService.Delete(id);
+            TempData["Mesaj"] = result.Message;
             return RedirectToAction(nameof(Index));
         }
 	}

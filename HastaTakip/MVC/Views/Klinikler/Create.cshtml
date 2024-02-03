@@ -3,51 +3,79 @@
 @*Model namespace using directive should be added to _ViewImports.cshtml.*@
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Yeni Klinik";
 }
 
-<h1>@ViewData["Title"]</h1>
+<div class="container">
+	<h1>@ViewData["Title"]</h1>
 
-<h4>Klinik</h4>
-<hr />
-<div class="row">
-    <div class="col-12">
-        <form asp-action="Create">
-		@Html.AntiForgeryToken()
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="row mb-3">
-                <label asp-for="Adi" class="col-2 col-form-label"></label>
+	@* 1. yöntem *@
+	@* @if(ViewData["Mesaj"] is not null)
+	{
+	<p class="text-danger">ViewData["Mesaj"]</p>
+	} *@
+	@* 2. yöntem *@
+	@* @if (ViewBag.Mesaj is not null)
+	{
+	<p class="text-danger">@ViewBag.Mesaj</p>
+	} *@
+	@* 3. yöntem sonuç valdiation summary üzerinden gösteriyoruz *@
+
+
+	<h4>Klinik</h4>
+	<hr />
+	<div class="row">
+		<div class="col-12">
+			@* Html Helper: *@
+			@* <form action="/Klinikler/Create" method="post"> *@
+			@* Tag Helper: *@
+			@* 1. yöntem: *@
+			@* <form asp-action="Create" asp-controller="Klinikler" method="post"> *@
+			@* 2. yöntem *@
+			<form asp-action="Create">
+				@Html.AntiForgeryToken()
+				<div asp-validation-summary="All" class="text-danger"></div>
+				<div class="row mb-3">
+					<label asp-for="Adi" class="col-2 col-form-label"></label>
+					<div class="col-5">
+						@* Html *@
+						@* <input type="text" name="adi" class="form-controller" id="Adi" *@
+						<input asp-for="Adi" class="form-control" />
+						<span asp-validation-for="Adi" class="text-danger"></span>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<label asp-for="Aciklamasi" class="col-2 col-form-label"></label>
+					<div class="col-5">
+						@* <textarea name="Aciklamasi" id="Aciklamasi" class="form-controller" rows="3"></textarea> *@
+						@* <input asp-for="Aciklamasi" class="form-control" /> *@
+						<textarea asp-for="Aciklamasi" class="form-control" rows="3"></textarea>
+						<span asp-validation-for="Aciklamasi" class="text-danger"></span>
+					</div>
+				</div>
+				@* <div class="row mb-3">
+				<label asp-for="Guid" class="col-2 col-form-label"></label>
 				<div class="col-5">
-					<input asp-for="Adi" class="form-control" />
-					<span asp-validation-for="Adi" class="text-danger"></span>
+				<input asp-for="Guid" class="form-control" />
+				<span asp-validation-for="Guid" class="text-danger"></span>
 				</div>
-            </div>
-            <div class="row mb-3">
-                <label asp-for="Aciklamasi" class="col-2 col-form-label"></label>
-				<div class="col-5">
-					<input asp-for="Aciklamasi" class="form-control" />
-					<span asp-validation-for="Aciklamasi" class="text-danger"></span>
+				</div> *@
+				<div class="row mb-3">
+					<div class="offset-2 col-5">
+						@* <input type="submit" value="Save" class="btn btn-primary" /> *@
+						<button type="submit" class="btn btn-primary" value="">Kaydet</button>
+						&nbsp;&nbsp;
+						<button type="reset" class="btn btn-outline-primary">Temizle</button>
+						&nbsp;&nbsp;
+						<a asp-action="Index">Back to List</a>
+					</div>
 				</div>
-            </div>
-            <div class="row mb-3">
-                <label asp-for="Guid" class="col-2 col-form-label"></label>
-				<div class="col-5">
-					<input asp-for="Guid" class="form-control" />
-					<span asp-validation-for="Guid" class="text-danger"></span>
-				</div>
-            </div>
-            <div class="row mb-3">
-				<div class="offset-2 col-5">
-					<input type="submit" value="Save" class="btn btn-primary" />
-					&nbsp;&nbsp;
-                    <button type="reset" class="btn btn-outline-primary">Reset</button>
-					&nbsp;&nbsp;
-					<a asp-action="Index">Back to List</a>
-				</div>
-            </div>
-        </form>
-    </div>
+			</form>
+		</div>
+	</div>
 </div>
+
+
 
 
 

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<HastaModel>
+@*Generated from Custom Template.*@
+@*Model namespace using directive should be added to _ViewImports.cshtml.*@
+
+@{
+    ViewData["Title"] = "Hastalar";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (TempData["Mesaj"] is not null)
+{
+    <p class="text-success">@TempData["Mesaj"]</p>
+}
+
+<p>
+    <a asp-action="Create">Yeni Hasta</a>
+</p>
+<table class="table table-dar">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AdiSoyadiOutput)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KimlikNo)
+            </th>
+            <th>
+				@Html.DisplayNameFor(model => model.DogumTarihiOutput)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cinsiyeti)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+		@foreach (var item in Model) {
+				<tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AdiSoyadiOutput)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.KimlikNo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DogumTarihiOutput)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cinsiyeti)
+                    </td>
+					<td>
+                        <a asp-action="Details" asp-route-id="@item.Id">Detay</a>&nbsp;|&nbsp;
+                        <a asp-action="Edit" asp-route-id="@item.Id">Düzenle</a>&nbsp;|&nbsp;
+                        <a asp-action="Delete" asp-route-id="@item.Id">Sil</a>
+					</td>
+				</tr>
+		}
+    </tbody>
+</table>
+
+
+
