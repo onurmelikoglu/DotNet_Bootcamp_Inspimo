@@ -19,7 +19,8 @@ namespace Business.Services
     }
     public class BransService : IBransService
     {
-        // Branş (1) ile doktor (*, m) arasında 1 to many ilişki bulunaktadır genelde 1 to many ilişkiler  1 olan taraf üzerinden yönetilmez. Many olan taraf (Doktor) üzerinden yönetilir
+        // Branş (1) ile Doktor (*, m) arasında 1 to many ilişki bulunmaktadır.
+        // Genelde 1 to many ilişkiler 1 olan taraf (Branş) üzerinden yönetilmez, many olan taraf (Doktor) üzerinden yönetilir.
 
         private readonly Db db;
 
@@ -38,7 +39,7 @@ namespace Business.Services
                      Id = b.Id,
 
                      // ekstra 1 to many ilişki özellikleri
-                     DoktorlarOutput = string.Join("<br />", b.Doktorlar.OrderBy(b => b.Adi).ThenBy(b => b.Soyadi).Select(b => b.Adi + " " + b.Soyadi)),
+                     DoktorlarOutput = string.Join("<br />", b.Doktorlar.OrderBy(d => d.Adi).ThenBy(d => d.Soyadi).Select(d => d.Adi + " " + d.Soyadi)),
                      DoktorlarInput = b.Doktorlar.Select(d => d.Id).ToList()
                  });
         }

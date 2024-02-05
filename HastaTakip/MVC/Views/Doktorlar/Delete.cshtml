@@ -1,63 +1,22 @@
-﻿@model DoktorModel
+﻿﻿
+@model DoktorModel
 @*Generated from Custom Template.*@
 @*Model namespace using directive should be added to _ViewImports.cshtml.*@
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Doktor Silme";
 }
 
 <h1>@ViewData["Title"]</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Doktoru silmek istediğinize emin misiniz?</h3>
 <div>
-    <h4>Doktor</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-2">
-            @Html.DisplayNameFor(model => model.Adi)
-        </dt>
-        <dd class="col-10">
-            @Html.DisplayFor(model => model.Adi)
-        </dd>
-        <dt class="col-2">
-            @Html.DisplayNameFor(model => model.Soyadi)
-        </dt>
-        <dd class="col-10">
-            @Html.DisplayFor(model => model.Soyadi)
-        </dd>
-        <dt class="col-2">
-            @Html.DisplayNameFor(model => model.UzmanMi)
-        </dt>
-        <dd class="col-10">
-            @Html.DisplayFor(model => model.UzmanMi)
-        </dd>
-        <dt class="col-2">
-            @Html.DisplayNameFor(model => model.KlinikId)
-        </dt>
-        <dd class="col-10">
-            @Html.DisplayFor(model => model.KlinikId)
-        </dd>
-        <dt class="col-2">
-            @Html.DisplayNameFor(model => model.BransId)
-        </dt>
-        <dd class="col-10">
-            @Html.DisplayFor(model => model.BransId)
-        </dd>
-        <dt class="col-2">
-            @Html.DisplayNameFor(model => model.Guid)
-        </dt>
-        <dd class="col-10">
-            @Html.DisplayFor(model => model.Guid)
-        </dd>
-    </dl>
+    <partial name="_Details" model="Model" />
     
     <form asp-action="Delete">
 	@Html.AntiForgeryToken()
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Yes" class="btn btn-danger" />&nbsp;&nbsp;
-        <a asp-action="Index" class="btn btn-success">No</a>
+        <input type="submit" value="Evet" class="btn btn-danger" />&nbsp;&nbsp;
+        <a asp-action="Index" class="btn btn-success">Hayır</a>
     </form>
 </div>
-
-
-

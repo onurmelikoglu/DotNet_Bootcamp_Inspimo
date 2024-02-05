@@ -1,69 +1,18 @@
-﻿@model DoktorModel
+﻿﻿
+@model DoktorModel
 @*Generated from Custom Template.*@
 @*Model namespace using directive should be added to _ViewImports.cshtml.*@
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Doktor Detayı";
 }
 
 <h1>@ViewData["Title"]</h1>
 
 <div>
-    <h4>Doktor</h4>
-    <hr />
-        <dl class="row">
-            <dt class="col-2">
-                @Html.DisplayNameFor(model => model.Adi)
-            </dt>
-            <dd class="col-10">
-                @Html.DisplayFor(model => model.Adi)
-            </dd>
-        </dl>
-        <dl class="row">
-            <dt class="col-2">
-                @Html.DisplayNameFor(model => model.Soyadi)
-            </dt>
-            <dd class="col-10">
-                @Html.DisplayFor(model => model.Soyadi)
-            </dd>
-        </dl>
-        <dl class="row">
-            <dt class="col-2">
-                @Html.DisplayNameFor(model => model.UzmanMi)
-            </dt>
-            <dd class="col-10">
-                @Html.DisplayFor(model => model.UzmanMi)
-            </dd>
-        </dl>
-        <dl class="row">
-            <dt class="col-2">
-                @Html.DisplayNameFor(model => model.KlinikId)
-            </dt>
-            <dd class="col-10">
-                @Html.DisplayFor(model => model.KlinikId)
-            </dd>
-        </dl>
-        <dl class="row">
-            <dt class="col-2">
-                @Html.DisplayNameFor(model => model.BransId)
-            </dt>
-            <dd class="col-10">
-                @Html.DisplayFor(model => model.BransId)
-            </dd>
-        </dl>
-        <dl class="row">
-            <dt class="col-2">
-                @Html.DisplayNameFor(model => model.Guid)
-            </dt>
-            <dd class="col-10">
-                @Html.DisplayFor(model => model.Guid)
-            </dd>
-        </dl>
+    <partial name="_Details" model="Model" />
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a>&nbsp;|&nbsp;
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Düzenle</a>&nbsp;|&nbsp;
+    <a asp-action="Index">Listeye Dön</a>
 </div>
-
-
-

@@ -1,9 +1,10 @@
-﻿@model DoktorModel
+﻿﻿
+@model DoktorModel
 @*Generated from Custom Template.*@
 @*Model namespace using directive should be added to _ViewImports.cshtml.*@
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Doktor Düzenle";
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -14,7 +15,7 @@
     <div class="col-12">
         <form asp-action="Edit">
 		@Html.AntiForgeryToken()
-            <div asp-validation-summary="All" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="row mb-3">
                 <label asp-for="Adi" class="col-2 col-form-label"></label>
 				<div class="col-5">
@@ -39,7 +40,7 @@
                 <label asp-for="KlinikId" class="col-2 col-form-label"></label>
 				<div class="col-5">
 					<select asp-for="KlinikId" class="form-select" asp-items="ViewBag.KlinikId">
-						<option value="">-- Select --</option>
+						<option value="">-- Seçiniz --</option>
 					</select>
 					<span asp-validation-for="KlinikId" class="text-danger"></span>
 				</div>
@@ -48,32 +49,36 @@
                 <label asp-for="BransId" class="col-2 col-form-label"></label>
 				<div class="col-5">
 					<select asp-for="BransId" class="form-select" asp-items="ViewBag.BransId">
-						<option value="">-- Select --</option>
+						<option value="">-- Seçiniz --</option>
 					</select>
 					<span asp-validation-for="BransId" class="text-danger"></span>
 				</div>
             </div>
             <input type="hidden" asp-for="Id" />
-            <div class="row mb-3">
-                <label asp-for="Guid" class="col-2 col-form-label"></label>
+
+			<div class="row mb-3">
+				<label asp-for="HastaIdleriInput" class="col-2 col-form-label"></label>
 				<div class="col-5">
-					<input asp-for="Guid" class="form-control" />
-					<span asp-validation-for="Guid" class="text-danger"></span>
+					<select multiple asp-for="HastaIdleriInput" class="form-select" asp-items="ViewBag.Hastalar">
+					</select>
+					<span asp-validation-for="HastaIdleriInput" class="text-danger"></span>
 				</div>
-            </div>
+			</div>
+
             <div class="row mb-3">
 				<div class="offset-2 col-5">
-					<input type="submit" value="Save" class="btn btn-primary" />
+					<input type="submit" value="Kaydet" class="btn btn-primary" />
 					&nbsp;&nbsp;
-                    <button type="reset" class="btn btn-outline-primary">Reset</button>
+                    <button type="reset" class="btn btn-outline-primary">Temizle</button>
 					&nbsp;&nbsp;
-					<a asp-action="Index">Back to List</a>
+					<a asp-action="Index">Listeye Dön</a>
 				</div>
             </div>
         </form>
     </div>
 </div>
 
-
-
-
+@section Scripts {
+	@* Client-Side Validation: *@
+	<partial name="_ValidationScriptsPartial" />
+}
