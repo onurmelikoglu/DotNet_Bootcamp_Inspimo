@@ -1,4 +1,4 @@
-﻿
+﻿#nullable disable
 
 using DataAccess.Records.Bases;
 using System.ComponentModel.DataAnnotations;
