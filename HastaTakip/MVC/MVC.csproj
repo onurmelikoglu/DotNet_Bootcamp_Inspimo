@@ -24,4 +24,10 @@
     <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Hesaplar\Controllers\" />
+    <Folder Include="Areas\Hesaplar\Data\" />
+    <Folder Include="Areas\Hesaplar\Models\" />
+  </ItemGroup>
+
 </Project>

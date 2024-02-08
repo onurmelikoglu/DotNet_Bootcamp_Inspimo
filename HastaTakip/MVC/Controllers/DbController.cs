@@ -36,6 +36,14 @@ namespace MVC.Controllers
             //}
             // 2. yöntem:
             _db.Branslar.RemoveRange(branslar);
+
+            _db.Kullanicilar.RemoveRange(_db.Kullanicilar.ToList());
+
+            if (_db.Roller.Count() > 0)
+            {
+                _db.Roller.RemoveRange(_db.Roller.ToList());
+                _db.Database.ExecuteSqlRaw("dbcc CHECKIDENT ('Roller', RESEED, 0)");
+            }
             #endregion
 
             #region Verilerin Eklenmesi
@@ -141,6 +149,37 @@ namespace MVC.Controllers
                         Soyadi = "Budayıcıoğlu",
                         UzmanMi = true,
                         BransId = _db.Branslar.SingleOrDefault(brans => brans.Adi == "Psikiyatri").Id
+                    }
+                }
+            });
+
+            _db.Roller.Add(new Rol()
+            {
+                Adi = "admin",
+                Guid = Guid.NewGuid().ToString(),
+                Kullanicilar = new List<Kullanici>()
+                {
+                    new Kullanici()
+                    {
+                        AktifMi = true,
+                        Guid = Guid.NewGuid().ToString(),
+                        KullaniciAdi = "cagil",
+                        Sifre = "cagil"
+                    }
+                }
+            });
+            _db.Roller.Add(new Rol()
+            {
+                Adi = "kullanici",
+                Guid = Guid.NewGuid().ToString(),
+                Kullanicilar = new List<Kullanici>()
+                {
+                    new Kullanici()
+                    {
+                        AktifMi = true,
+                        Guid = Guid.NewGuid().ToString(),
+                        KullaniciAdi = "leo",
+                        Sifre = "leo"
                     }
                 }
             });

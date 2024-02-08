@@ -1,6 +1,6 @@
 ﻿using Business.Services;
-using Business.Utilities.Bases;
 using Business.Utilities;
+using Business.Utilities.Bases;
 using DataAccess.Contexts;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
@@ -27,13 +27,14 @@ var connectionString = builder.Configuration.GetConnectionString("Db");
 
 #region IoC Container
 // Autofac, Ninject
-// Unable to resolve service hataları burada çözümlenir
+// Unable to resolve service hatalarý burada çözümlenir
 builder.Services.AddDbContext<Db>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddScoped<IKlinikService, KlinikService>();
 builder.Services.AddScoped<IBransService, BransService>();
 builder.Services.AddScoped<IDoktorService, DoktorService>();
 builder.Services.AddScoped<IHastaService, HastaService>();
+builder.Services.AddScoped<IKullaniciService, KullaniciService>();
 
 builder.Services.AddSingleton<TcKimlikNoUtilBase, TcKimlikNoUtil>();
 
@@ -43,7 +44,6 @@ builder.Services.AddSingleton<TcKimlikNoUtilBase, TcKimlikNoUtil>();
 // bir kere oluþturulur ve uygulama çalýþtýðý (IIS üzerinden uygulama durdurulmadýðý veya yeniden baþlatýlmadýðý) sürece bu obje hayatta kalýr.
 // AddTransient: istek (request) baðýmsýz ihtiyaç olan objenin referansýný (genelde interface veya abstract class) kullandýðýmýz her yerde bu objeyi new'ler.
 // Genelde AddScoped methodu kullanýlýr.
-
 #endregion
 
 // Add services to the container.
@@ -74,6 +74,14 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+      name: "areas",
+      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+});
 
 app.MapControllerRoute(
     name: "default",
