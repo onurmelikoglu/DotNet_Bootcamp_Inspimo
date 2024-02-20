@@ -10,15 +10,27 @@ namespace DataAccess.Entities
         [Required]
         [StringLength(50)]
         public string Adi { get; set; }
+
         [Required]
         [StringLength(50)]
         public string Soyadi { get; set; }
-        public bool UzmanMi { get; set; }
-        public int? KlinikId { get; set; } // veritabanı 1 to many ilişkisi
-        public Klinik Klinik { get; set; } // has a relationship ilişkisi
-        public int BransId { get; set; } // veritabanı 1 to many iliski
-        public Brans Brans { get; set; } // has a relationship
 
-        public List<DoktorHasta> DoktorHastalar { get; set; } // many to many has a relation ship
+        public bool UzmanMi { get; set; }
+
+        public int? KlinikId { get; set; } // veritabanı 0 to many ilişkisi
+
+        public Klinik Klinik { get; set; } // 0 to many has a relationship
+
+        public int BransId { get; set; } // veritabanı 1 to many ilişkisi
+
+        public Brans Brans { get; set; } // 1 to many has a relationship
+
+        public List<DoktorHasta> DoktorHastalar { get; set; } // many to many has a relationship
+
+        public int? SehirId { get; set; }
+        public Sehir Sehir { get; set; }
+
+        public int? UlkeId { get; set; }
+        public Ulke Ulke { get; set; }
     }
 }

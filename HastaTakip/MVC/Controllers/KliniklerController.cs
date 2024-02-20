@@ -2,11 +2,14 @@
 using Business.Models;
 using Business.Services;
 using DataAccess.Results.Bases;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 //Generated from Custom Template.
 namespace MVC.Controllers
 {
+    [Authorize(Roles = "admin")]
+
     public class KliniklerController : Controller
     {
         // TODO: Add service injections here
@@ -86,6 +89,7 @@ namespace MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        // [Authorize(Roles = "admin")] // tek tek koyulacaksa hepsine koyulmalı
         public IActionResult Create(KlinikModel klinik)
         {
             if (ModelState.IsValid)

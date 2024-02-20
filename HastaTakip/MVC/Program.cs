@@ -2,8 +2,11 @@
 using Business.Utilities;
 using Business.Utilities.Bases;
 using DataAccess.Contexts;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
+using MVC.Utilities;
+using MVC.Utilities.Bases;
 using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +24,26 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
 });
 #endregion
 
+#region Authentication
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(config =>
+    {
+        config.LoginPath = "/Hesaplar/Home/Login";
+        config.LogoutPath = "/Hesaplar/Home/Logout";
+        config.AccessDeniedPath = "/Hesaplar/Home/AccessDenied";
+        config.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+        config.SlidingExpiration = true;
+    });
+#endregion
+
+#region Session
+builder.Services.AddSession(config =>
+{
+    config.IdleTimeout = TimeSpan.FromMinutes(60);
+    config.IOTimeout = Timeout.InfiniteTimeSpan;
+});
+#endregion
+
 #region Connection String
 var connectionString = builder.Configuration.GetConnectionString("Db");
 #endregion
@@ -35,8 +58,13 @@ builder.Services.AddScoped<IBransService, BransService>();
 builder.Services.AddScoped<IDoktorService, DoktorService>();
 builder.Services.AddScoped<IHastaService, HastaService>();
 builder.Services.AddScoped<IKullaniciService, KullaniciService>();
+builder.Services.AddScoped<UlkeServiceBase, UlkeService>();
+builder.Services.AddScoped<SehirServiceBase, SehirService>();
 
 builder.Services.AddSingleton<TcKimlikNoUtilBase, TcKimlikNoUtil>();
+
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddSingleton<FavoriDoktorlarSessionUtilBase, FavoriDoktorlarSessionUtil>();
 
 // AddScoped: istek (request) boyunca objenin referansýný (genelde interface veya abstract class) kullandýðýmýz yerde obje (somut class'tan oluþturulacak)
 // bir kere oluþturulur ve yanýt (response) dönene kadar bu obje hayatta kalýr.
@@ -73,7 +101,15 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
+#region Authentication
+app.UseAuthentication(); // sen kimsin?
+#endregion
+
+app.UseAuthorization(); // sen neler yapabilirsin?
+
+#region Session
+app.UseSession();
+#endregion
 
 app.UseEndpoints(endpoints =>
 {

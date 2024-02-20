@@ -29,6 +29,10 @@ namespace MVC.Controllers
         // GET: Branslar/Details/5
         public IActionResult Details(int id)
         {
+            if (!User.IsInRole("admin"))
+            {
+                return RedirectToAction("Login", "Home", new { area = "Hesaplar" });
+            }
             BransModel brans = bransService.Query().SingleOrDefault(b => b.Id == id); // TODO: Add get item service logic here
             if (brans == null)
             {
