@@ -1,39 +1,42 @@
-﻿using eCommerceServer.Application.Features.Auth.Login;
-using eCommerceServer.Application.Services;
-using eCommerceServer.Domain.Entities;
-using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using eCommerceServer.Application.Features.Auth.Login;
+using eCommerceServer.Application.Services;
+using eCommerceServer.Domain.Entities;
+using Microsoft.IdentityModel.Tokens;
 
 namespace eCommerceServer.Infrustructure.Services;
-internal class JwtProvider : IJwtProvider
+
+public class JwtProvider : IJwtProvider
 {
     public LoginCommandResponse CreateToken(AppUser user)
     {
         List<Claim> claims = new()
         {
-            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-            new Claim(ClaimTypes.Name, user.FullName.ToString()),
-            new Claim("Email", user.Email ?? "")
+            new Claim("Name", user.FirstName),
+            new Claim(ClaimTypes.Email, user.Email ?? ""),
+            new Claim("UserName", user.UserName ?? ""),
         };
 
-        SymmetricSecurityKey securityKey = new(Encoding.UTF8.GetBytes(string.Join("-", Guid.NewGuid().ToString(), Guid.NewGuid().ToString())));
-        SigningCredentials signingCredentials = new(securityKey, SecurityAlgorithms.HmacSha512);
-
+        SigningCredentials signingCredentials = new(
+            new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
+                "myIdentity-myIdentity-myIdentity-myIdentity-myIdentity-myIdentity-myIdentity-myIdentity-myIdentity-myIdentity-myIdentity-myIdentity-myIdentity")),
+            SecurityAlgorithms.HmacSha512);
+        
         JwtSecurityToken securityToken = new(
-            issuer:"onur",
-            audience: "firma", 
+            issuer: "Onur",
+            audience: "Firma",
             claims: claims,
-            notBefore: DateTime.Now, 
-            expires: DateTime.Now.AddDays(10), 
-            signingCredentials: signingCredentials
+            signingCredentials: signingCredentials,
+            notBefore: DateTime.Now,
+            expires: DateTime.Now.AddDays(1)
             );
 
         JwtSecurityTokenHandler handler = new();
         string token = handler.WriteToken(securityToken);
 
-        return new(token, string.Empty);
-        
+        return new(token, "");
+
     }
 }

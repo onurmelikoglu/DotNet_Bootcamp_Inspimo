@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace eCommerceServer.Application.Features.Auth.Login;
 
-internal sealed class LogingCommandHandle(UserManager<AppUser> userManager, IJwtProvider jwtProvider) : IRequestHandler<LoginCommand, LoginCommandResponse>
+internal sealed class LogingCommandHandle(IJwtProvider jwtProvider, UserManager<AppUser> userManager) : IRequestHandler<LoginCommand, LoginCommandResponse>
 {
     public async Task<LoginCommandResponse> Handle(LoginCommand request, CancellationToken cancellationToken)
     {
@@ -14,7 +14,7 @@ internal sealed class LogingCommandHandle(UserManager<AppUser> userManager, IJwt
         if (user is null)
         {
             user = await userManager.FindByNameAsync(request.EmailOrUserName);
-            if(user is null)
+            if (user is null)
             {
                 throw new ArgumentException("Kullanıcı Bulunamadı");
             }
