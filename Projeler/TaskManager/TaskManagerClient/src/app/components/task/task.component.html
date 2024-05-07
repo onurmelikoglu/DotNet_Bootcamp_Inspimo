@@ -1,0 +1,41 @@
+<app-blank pageName="Tasklar">
+  <app-section sectionTitle="ERP">
+
+    <div class="container">
+      <div class="table-wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Kullanıcı</th>
+              <th>Başlık</th>
+              <th>Açıklaması</th>
+              <th>Bitiş Tarihi</th>
+              <th class="text-right">#</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (item of tasks; track $index) {
+            <tr>
+              <td>{{$index+1}}</td>
+              <td>{{item.userName}}</td>
+              <td>{{item.title}}</td>
+              <td>{{item.description}}</td>
+              <td>{{item.finishDate}}</td>
+              <td class="text-right">
+                <button class="btn btn-primary action-btn">
+                  <i class="fa-solid fa-pen"></i> Düzenle
+                </button>
+                <button class="btn btn-danger action-btn">
+                  <i class="fa-solid fa-trash"></i> Sil
+                </button>
+              </td>
+            </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </app-section>
+</app-blank>

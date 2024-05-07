@@ -1,0 +1,14 @@
+a {
+    cursor: pointer;
+}
+
+.me-2 {
+    margin-right: 7px;
+}
+
+i,
+.fa-solid {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-style: normal;
+}

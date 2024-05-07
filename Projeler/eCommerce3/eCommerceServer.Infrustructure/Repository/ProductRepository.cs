@@ -10,7 +10,7 @@ internal class ProductRepository(ApplicationDbContext context) : IProductReposit
     public async Task CreateAsync(Product product, CancellationToken cancellationToken)
     {
         await context.AddAsync(product, cancellationToken);
-        await context.SaveChangesAsync();
+        await context.SaveChangesAsync(cancellationToken);
     }
 
     public async Task<List<Product>> GetAllAsync(CancellationToken cancellationToken = default)

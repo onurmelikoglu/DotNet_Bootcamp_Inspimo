@@ -1,0 +1,91 @@
+<app-blank pageName="Ana Sayfa">
+    <app-section sectionTitle="ERP">
+
+        <div class="container">
+            <div class="table-wrapper">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Kullanıcı</th>
+                            <th>Email</th>
+                            <th class="text-right">#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (item of users; track $index) {
+                        <tr>
+                            <td>{{$index+1}}</td>
+                            <td>{{item.fullName}}</td>
+                            <td>{{item.email}}</td>
+                            <td class="text-right">
+                                <button type="button" class="btn btn-primary action-btn" data-toggle="modal"
+                                    data-target="#staticBackdrop" (click)="saveUserIdForAddModel(item.id)">
+                                    <i class="fa-solid fa-plus"></i> Task Ata
+                                </button>
+                                <button class="btn btn-primary action-btn">
+                                    <i class="fa-solid fa-pen"></i> Düzenle
+                                </button>
+                                <button class="btn btn-danger action-btn">
+                                    <i class="fa-solid fa-trash"></i> Sil
+                                </button>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Task Atama</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form formValidate #addForm="ngForm" (ngSubmit)="add(addForm)" autocomplete="off">
+                            <div class="form-group">
+                                <label for="title">Task Adı</label>
+                                <input type="text" class="form-control" name="title" [(ngModel)]="addModel.title">
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Açıklama</label>
+                                <input type="description" class="form-control" name="description"
+                                    [(ngModel)]="addModel.description">
+                            </div>
+                            <div class="form-group">
+                                <label for="finishDate">Bitiş Tarihi</label>
+                                <input type="date" class="form-control" name="finishDate"
+                                    [(ngModel)]="addModel.finishDate">
+                            </div>
+                            <div class="form-group">
+                                <label>Task Dosyaları</label>
+                                <ngx-dropzone (change)="setTaskFile($event)" [multiple]="true">
+                                    <ngx-dropzone-label>Upload Task File</ngx-dropzone-label>
+                                    @if(addModel.taskFile != undefined){
+                                    <ngx-dropzone-preview [removable]="true"
+                                        (removed)="removeTaskFile(addModel.taskFile)">
+                                        <ngx-dropzone-label>{{ addModel.taskFile }} ({{
+                                            addModel.taskFile }})</ngx-dropzone-label>
+                                    </ngx-dropzone-preview>
+                                    }
+                                </ngx-dropzone>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kaydet</button>
+                        </form>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+    </app-section>
+</app-blank>
